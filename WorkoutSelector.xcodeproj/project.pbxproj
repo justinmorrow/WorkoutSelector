@@ -1,0 +1,291 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DF50D6FB1CBA1AE800D6435D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF50D6FA1CBA1AE800D6435D /* AppDelegate.swift */; };
+		DF50D6FD1CBA1AE800D6435D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF50D6FC1CBA1AE800D6435D /* ViewController.swift */; };
+		DF50D7021CBA1AE800D6435D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF50D7011CBA1AE800D6435D /* Assets.xcassets */; };
+		DF50D7051CBA1AE800D6435D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF50D7031CBA1AE800D6435D /* LaunchScreen.storyboard */; };
+		DF50D70D1CBAD4CD00D6435D /* WorkoutManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF50D70C1CBAD4CD00D6435D /* WorkoutManager.swift */; };
+		DFB15D511CBCA57F00696294 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = DFB15D501CBCA57F00696294 /* .gitignore */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		DF50D6F71CBA1AE800D6435D /* WorkoutSelector.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WorkoutSelector.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF50D6FA1CBA1AE800D6435D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DF50D6FC1CBA1AE800D6435D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DF50D7011CBA1AE800D6435D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DF50D7041CBA1AE800D6435D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DF50D7061CBA1AE800D6435D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DF50D70C1CBAD4CD00D6435D /* WorkoutManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WorkoutManager.swift; path = ../WorkoutManager.swift; sourceTree = "<group>"; };
+		DFB15D501CBCA57F00696294 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DF50D6F41CBA1AE800D6435D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DF50D6EE1CBA1AE800D6435D = {
+			isa = PBXGroup;
+			children = (
+				DF50D6F91CBA1AE800D6435D /* WorkoutSelector */,
+				DF50D6F81CBA1AE800D6435D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DF50D6F81CBA1AE800D6435D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DF50D6F71CBA1AE800D6435D /* WorkoutSelector.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DF50D6F91CBA1AE800D6435D /* WorkoutSelector */ = {
+			isa = PBXGroup;
+			children = (
+				DF50D70C1CBAD4CD00D6435D /* WorkoutManager.swift */,
+				DFB15D501CBCA57F00696294 /* .gitignore */,
+				DF50D6FA1CBA1AE800D6435D /* AppDelegate.swift */,
+				DF50D6FC1CBA1AE800D6435D /* ViewController.swift */,
+				DF50D7011CBA1AE800D6435D /* Assets.xcassets */,
+				DF50D7031CBA1AE800D6435D /* LaunchScreen.storyboard */,
+				DF50D7061CBA1AE800D6435D /* Info.plist */,
+			);
+			path = WorkoutSelector;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DF50D6F61CBA1AE800D6435D /* WorkoutSelector */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DF50D7091CBA1AE800D6435D /* Build configuration list for PBXNativeTarget "WorkoutSelector" */;
+			buildPhases = (
+				DF50D6F31CBA1AE800D6435D /* Sources */,
+				DF50D6F41CBA1AE800D6435D /* Frameworks */,
+				DF50D6F51CBA1AE800D6435D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WorkoutSelector;
+			productName = WorkoutSelector;
+			productReference = DF50D6F71CBA1AE800D6435D /* WorkoutSelector.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DF50D6EF1CBA1AE800D6435D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = JPMorrow;
+				TargetAttributes = {
+					DF50D6F61CBA1AE800D6435D = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = H4J6EJC27D;
+					};
+				};
+			};
+			buildConfigurationList = DF50D6F21CBA1AE800D6435D /* Build configuration list for PBXProject "WorkoutSelector" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DF50D6EE1CBA1AE800D6435D;
+			productRefGroup = DF50D6F81CBA1AE800D6435D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DF50D6F61CBA1AE800D6435D /* WorkoutSelector */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DF50D6F51CBA1AE800D6435D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF50D7051CBA1AE800D6435D /* LaunchScreen.storyboard in Resources */,
+				DFB15D511CBCA57F00696294 /* .gitignore in Resources */,
+				DF50D7021CBA1AE800D6435D /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DF50D6F31CBA1AE800D6435D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF50D6FD1CBA1AE800D6435D /* ViewController.swift in Sources */,
+				DF50D6FB1CBA1AE800D6435D /* AppDelegate.swift in Sources */,
+				DF50D70D1CBAD4CD00D6435D /* WorkoutManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		DF50D7031CBA1AE800D6435D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DF50D7041CBA1AE800D6435D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DF50D7071CBA1AE800D6435D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DF50D7081CBA1AE800D6435D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DF50D70A1CBA1AE800D6435D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = WorkoutSelector/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jpmorrow.WorkoutSelector;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		DF50D70B1CBA1AE800D6435D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = WorkoutSelector/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jpmorrow.WorkoutSelector;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DF50D6F21CBA1AE800D6435D /* Build configuration list for PBXProject "WorkoutSelector" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DF50D7071CBA1AE800D6435D /* Debug */,
+				DF50D7081CBA1AE800D6435D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DF50D7091CBA1AE800D6435D /* Build configuration list for PBXNativeTarget "WorkoutSelector" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DF50D70A1CBA1AE800D6435D /* Debug */,
+				DF50D70B1CBA1AE800D6435D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DF50D6EF1CBA1AE800D6435D /* Project object */;
+}
