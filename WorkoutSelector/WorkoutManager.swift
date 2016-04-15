@@ -8,63 +8,59 @@
 
 import UIKit
 
-class JPWorkoutManager: NSObject, UITableViewDataSource {
-    var workout = JPWorkout()
-    var exercises = Set<JPExercise>()
+class WorkoutManager {
+    var workout = Workout()
+    var exercises = OrderedSet<Exercise>()
     
     // MARK: Class methods
     
-    func addExercise(exercise: JPExercise) {
-        exercises.insert(exercise)
+    func addExercise(exercise: Exercise) {
+        exercises.append(exercise)
     }
     
-    func generateWorkout() {
-        // TODO: Implement
+    func removeExercise(exercise: Exercise) {
+        exercises.remove(exercise)
     }
     
-    // MARK: UITableViewDataSource
-    
-    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath)
-        cell.textLabel?.text = workout.exercises[indexPath.row].name
-        
-        return cell
-    }
-    
-    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return workout.exercises.count
+    func generateWorkout(n: Int) {
+        for _ in (0 ..< n) {
+            let i = Int(arc4random_uniform(UInt32(exercises.count)))
+            workout.exercises.append(exercises[i])
+        }
     }
 }
 
 /// Has an optional name and an ordered set of exercises
-class JPWorkout {
-    var name: String?
-    var exercises = NSOrderedSet()
+struct Workout {
+    var name = String()
+    var exercises = Array<Exercise>()
     
-    // Class methods
+    // MARK: Class methods
+    
     init() {}
-    init(givenExercises: Set<JPExercise>, numExercises: Int) {
+    init(givenExercises: Set<Exercise>, numExercises: Int) {
         
     }
 }
 
 /// Has a name, has a set of target muscle groups, and is hashable.
-class JPExercise: Hashable {
+struct Exercise: Hashable {
     
-    var name: String?
-    var targetGroups = Set<JPMuscleGroup>()
+    var name = String()
+    var targetGroups = Set<MuscleGroup>()
     
-    // MARK: Class Functions
+    // MARK: Class methods
     
-    init(name: String) {
+    init(name: String, targetGroups: Set<MuscleGroup>) {
         self.name = name
+        self.targetGroups = targetGroups
     }
     
-    func addTargetMuscleGroup(muscleGroup: JPMuscleGroup) {
+    mutating func addTargetMuscleGroup(muscleGroup: MuscleGroup) {
         targetGroups.insert(muscleGroup)
     }
     
-    func removeTargetMuscleGroup(muscleGroup: JPMuscleGroup) {
+    mutating func removeTargetMuscleGroup(muscleGroup: MuscleGroup) {
         targetGroups.remove(muscleGroup)
     }
     
@@ -79,16 +75,16 @@ class JPExercise: Hashable {
     }
 }
 
-// JPExercise: Equatable
+// MARK: Exercise: Equatable
 
-func ==(left: JPExercise, right: JPExercise) -> Bool {
+func ==(left: Exercise, right: Exercise) -> Bool {
     // TODO: Optimization. Return false always
     return ((left.name == right.name) && (left.targetGroups == right.targetGroups))
 }
 
-/// Enum with defined values for all target muscle groups. 
+/// Enum with defined values for all target muscle groups.
 /// Each group is assigned a power of 2
-enum JPMuscleGroup: UInt, CustomStringConvertible {
+enum MuscleGroup: UInt, CustomStringConvertible {
     case none = 0
     case neck = 1
     case shoulders = 2

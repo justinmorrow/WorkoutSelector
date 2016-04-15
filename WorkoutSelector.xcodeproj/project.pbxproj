@@ -11,7 +11,8 @@
 		DF50D6FD1CBA1AE800D6435D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF50D6FC1CBA1AE800D6435D /* ViewController.swift */; };
 		DF50D7021CBA1AE800D6435D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF50D7011CBA1AE800D6435D /* Assets.xcassets */; };
 		DF50D7051CBA1AE800D6435D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF50D7031CBA1AE800D6435D /* LaunchScreen.storyboard */; };
-		DF50D70D1CBAD4CD00D6435D /* WorkoutManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF50D70C1CBAD4CD00D6435D /* WorkoutManager.swift */; };
+		DF61CBA41CBD522A00344D0F /* WorkoutManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF61CBA31CBD522A00344D0F /* WorkoutManager.swift */; };
+		DF61CBA61CBFFC9100344D0F /* OrderedSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF61CBA51CBFFC9100344D0F /* OrderedSet.swift */; };
 		DFB15D511CBCA57F00696294 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = DFB15D501CBCA57F00696294 /* .gitignore */; };
 /* End PBXBuildFile section */
 
@@ -22,7 +23,9 @@
 		DF50D7011CBA1AE800D6435D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DF50D7041CBA1AE800D6435D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DF50D7061CBA1AE800D6435D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DF50D70C1CBAD4CD00D6435D /* WorkoutManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WorkoutManager.swift; path = ../WorkoutManager.swift; sourceTree = "<group>"; };
+		DF61CBA21CBD51C300344D0F /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; };
+		DF61CBA31CBD522A00344D0F /* WorkoutManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkoutManager.swift; sourceTree = "<group>"; };
+		DF61CBA51CBFFC9100344D0F /* OrderedSet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderedSet.swift; sourceTree = "<group>"; };
 		DFB15D501CBCA57F00696294 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
@@ -56,7 +59,9 @@
 		DF50D6F91CBA1AE800D6435D /* WorkoutSelector */ = {
 			isa = PBXGroup;
 			children = (
-				DF50D70C1CBAD4CD00D6435D /* WorkoutManager.swift */,
+				DF61CBA51CBFFC9100344D0F /* OrderedSet.swift */,
+				DF61CBA31CBD522A00344D0F /* WorkoutManager.swift */,
+				DF61CBA21CBD51C300344D0F /* MyPlayground.playground */,
 				DFB15D501CBCA57F00696294 /* .gitignore */,
 				DF50D6FA1CBA1AE800D6435D /* AppDelegate.swift */,
 				DF50D6FC1CBA1AE800D6435D /* ViewController.swift */,
@@ -141,7 +146,8 @@
 			files = (
 				DF50D6FD1CBA1AE800D6435D /* ViewController.swift in Sources */,
 				DF50D6FB1CBA1AE800D6435D /* AppDelegate.swift in Sources */,
-				DF50D70D1CBAD4CD00D6435D /* WorkoutManager.swift in Sources */,
+				DF61CBA61CBFFC9100344D0F /* OrderedSet.swift in Sources */,
+				DF61CBA41CBD522A00344D0F /* WorkoutManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

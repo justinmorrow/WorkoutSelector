@@ -18,6 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         // Define navigationController
         let navigationController = UINavigationController(rootViewController: ViewController())
+        navigationController.navigationBar.
         
         window.rootViewController = navigationController
         
